@@ -1,7 +1,7 @@
 import sys
 import logging
 import logging.config
-from time import sleep, time
+from time import time
 import traceback
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -63,8 +63,6 @@ def main():
 
                 button = driver.find_element(By.XPATH, BUTTON_XPATH)
                 button.click()
-
-                sleep(2)
 
                 driver.save_screenshot(f"images/{i}.png")
 
