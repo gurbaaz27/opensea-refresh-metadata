@@ -57,7 +57,7 @@ def main():
 
         tic = time()
 
-        for i in range(5):
+        for i in range(5432):
             try:
                 driver.get(BASE_URL + str(i))
 
